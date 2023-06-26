@@ -7,7 +7,7 @@ const getLabels = async ():Promise<Label[]> => {
 
   await sleep(2) // Simulamos una peticion lenta
    
-  const { data } = await githubApi.get<Label[]>('/labels', {
+  const { data } = await githubApi.get<Label[]>('/labels?per_page=100', {
     // headers: {
     //   Authorization: null  // PARA REESCRIBIR ALGUN PARAMETRO DE LA CONFIGURACION GLOBAL
     // }

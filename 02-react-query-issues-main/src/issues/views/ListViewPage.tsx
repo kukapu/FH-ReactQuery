@@ -6,7 +6,7 @@ import { LoadingIcon } from '../../shared/components/LoadingIcon';
 import { State } from '../interfaces/issue';
 
 
-export const ListView = () => {
+export const ListViewPage = () => {
 
   const [ selectedLabels, setSelectedLabels ] = useState<string[]>([])
   const [state, setState] = useState<State>()
